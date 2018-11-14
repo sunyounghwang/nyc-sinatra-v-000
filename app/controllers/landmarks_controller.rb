@@ -27,10 +27,4 @@ class LandmarksController < ApplicationController
     @landmark.update(params[:landmark])
     redirect to "/landmarks/#{@landmark.id}"
   end
-
-  helpers do
-    def all_landmarks
-      Landmark.all
-    end
-  end
 end
